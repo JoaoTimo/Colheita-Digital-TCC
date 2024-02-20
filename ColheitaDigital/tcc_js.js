@@ -22,3 +22,12 @@ function aoClicar5(){
     window.location = "beneficiosHTML.html"
     return
 }
+
+function aoClicar6(){
+    window.location = "pagLogin.html"
+    return
+}
+function aoClicar7(){
+    window.location = "assistTec.html"
+    return
+}

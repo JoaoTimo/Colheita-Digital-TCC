@@ -20,8 +20,8 @@
   <body>    
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white flex">
+        <div class="container-fluid p-2 bd-highlight d-flex">
           <div class="col-md-5">
             <a class="navbar-brand" href="#"><img src="imagens/logoPrj.JPG" alt="" style="height: 120px; width: 130px;" onclick="aoClicar1()"></a>
           </div>
@@ -55,6 +55,16 @@
                   <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar5()">Benefícios</a>
                 </button>
               </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar6()">Login/Cadastre-se</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar7()">Assistencia Técnica</a>
+                </button>
+              </li>
             </ul>
             
           </div>
@@ -64,57 +74,58 @@
     
     <main>
     <!-- Carrosel -->
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-    
-            <div class="container">
-                <div class="carousel-caption text-start">
-                        
-                <h1>Compartilhamento de atividades.</h1>
-                <p>Compre diretamente com os produtores e não com terceiros!</p>
-                
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-    
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Colaboração uns com os outros.</h1>
-                <p>Damos prioridade para manter sempre um trabalho mais unido.</p>
-                
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-    
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>Facilidade nas negociações.</h1>
-                <p>Trabalhamos para sempre melhorar as negociações dos nossos clientes.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagens/colabb.jpg" alt="">
+          <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Colaboração uns com os outros.</h1>
+                <p>Trabalhamos para sempre melhorar as negociações dos nossos clientes.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/comparTilha.png" alt="">
+          <svg class="bd-placeholder-img" width="100%" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+  
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Compartilhamento de atividades.</h1>
+                <p>Compre diretamente com os produtores e não com terceiros!</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/redeContact.jpg" alt="">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+  
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Rede de contatos.</h1>
+                <p>Com uma galeria de amostras para </p>
+              <p><a class="btn btn-lg btn-primary" href="#">Navegar pela galeria</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     
     
       <!-- Marketing messaging and featurettes
@@ -126,7 +137,7 @@
         <!-- Bolinhas depois do carrosel -->
         <div class="row">
           <div class="col-lg-4">
-             <img src="imagens/WhatsApp Image 2024-01-31 at 13.59.24.jpeg" alt="" class="rounded-circle" style="width: 267px;" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+             <img src="imagens/assistencTec.png" alt="" class="rounded-circle" style="width: 150px;" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
             
             <h2>Assistência técnica</h2>
             <p>Sempre temos uma equipe disponível para ajuda aos clientes.</p>
