@@ -7,15 +7,32 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>ColheitaDigtial/Produtor</title>
+    <title>TCC FODA</title>
     
       <!-- Bootstrap core CSS -->
 <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+
+
+
+        <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
     
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="produtorCSS.css">
-    <script src="produtorJS.js"></script>
+    <link href="tcc_css.css" rel="stylesheet">
+    <link rel="produtorCSS.css" href="">
   </head>
   <body>    
 
@@ -31,39 +48,16 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <button type="button" class="btn btn-light">
-                  <a class="nav-link" aria-current="page" href="#" onclick="aoClicar1()">Início</a>
-                </button>
+                <a class="nav-link" aria-current="page" href="#" onclick="aoClicar1()">Início</a>
               </li>
               <li class="nav-item">
-                <button type="button" class="btn btn-light">
-                  <a class="nav-link" href="#" onclick="aoClicar2()">Produtor</a>
-                </button>
+                <a class="nav-link" href="#" onclick="aoClicar2()">Produtor</a>
               </li>
               <li class="nav-item">
-                <button type="button" class="btn btn-light">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Comprador</a>
-                </button>
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Comprador</a>
               </li>
               <li class="nav-item">
-                <button type="button" class="btn btn-light">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar4()">Sobre nós</a>
-                </button>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-light">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar5()">Benefícios</a>
-                </button>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-light">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar6()">Login/Cadastre-se</a>
-                </button>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-light">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar7()">Assistencia Técnica</a>
-                </button>
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar4()">Sobre nós</a>
               </li>
             </ul>
            
@@ -79,12 +73,8 @@
 
 
     <main class="container-fluid">
-      <div class="container">
-        <div class="margemProdutores">
-        <h1>PRODUTORES</h1>
-      </div>
-      <br><br>
-      </div>
+      
+      <h1>PRODUTORES </h1>
 
       <div class="d-flex justify-content-between">
 
@@ -93,9 +83,9 @@
         <div class="card" style="width: 18rem;">
             <img src="imagens/WhatsApp Image 2024-01-30 at 15.41.36.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">José</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minhaJanelaModal_J">Entrar em contato</a>
             </div>
           </div>
 
@@ -104,7 +94,7 @@
             <div class="card-body">
               <h5 class="card-title">Botelho</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minhaJanelaModal_B">Entrar em contato</a>
             </div>
           </div>
 
@@ -113,8 +103,12 @@
             <img src="imagens/598379_normal redneck _xl-1024-v1-0.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Robson </h5>
-              <p class="card-text">vendo a mãe de quem ler isso</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text">nome: Robson da Silva 
+                <br>
+                idade: 45 anos
+                <br>
+                vendo: cenoura, tomate, batata e beteraba</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minhaJanelaModal_R">Entrar em contato</a>
             </div>
           </div>
 
@@ -123,24 +117,16 @@
             <div class="card-body">
               <h5 class="card-title">Seu Zé</h5>
               <p class="card-text">dando o cu pela vida</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minhaJanelaModal_Z">Entrar em contato</a>
             </div>
           </div>
 
         </div>
     </main>
     
-    <hr class="featurette-divider">
     
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container fim -->
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Retornar ao topo</a></p>
-    <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
-</main>
+      </footer>
+    </main>
     
     
         <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -151,4 +137,109 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
+
+
+
+
+
+  <!-- Janela modal Botelho -->
+<div class="modal fade" id="minhaJanelaModal_B" tabindex="-1" aria-labelledby="minhaJanelaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="minhaJanelaModalLabel_B">Minha Janela Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Conteúdo da janela modal -->
+        zap zap do novinho
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Janela modal Robson -->
+<div class="modal fade" id="minhaJanelaModal_R" tabindex="-1" aria-labelledby="minhaJanelaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="minhaJanelaModalLabel_B">Minha Janela Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Conteúdo da janela modal -->
+        45 anos 
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Janela modal Ze -->
+<div class="modal fade" id="minhaJanelaModal_Z" tabindex="-1" aria-labelledby="minhaJanelaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="minhaJanelaModalLabel_B">Minha Janela Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Conteúdo da janela modal -->
+        Conteúdo da Janela Modal
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- Janela modal Jose -->
+ <div class="modal fade" id="minhaJanelaModal_J" tabindex="-1" aria-labelledby="minhaJanelaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="minhaJanelaModalLabel_B">Minha Janela Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Conteúdo da janela modal -->
+        zap zap do novinho
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<hr class="featurette-divider">
+    
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container fim -->
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Retornar ao topo</a></p>
+    <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
 </html>
+
+
+
+
