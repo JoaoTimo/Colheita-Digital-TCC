@@ -20,7 +20,7 @@
 
     <header>
       <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
-        <div class="container-fluid">
+        <div class="container-fluid" style="margin-right: 20%;">
             <div class="col-md-5">
                 <a class="navbar-brand" href="#"><img src="imagens/logoPrj.JPG" alt="" style="height: 120px; width: 130px;" onclick="aoClicar1()"></a>
             </div>
@@ -41,7 +41,7 @@
               </li>
               <li class="nav-item">
                 <button type="button" class="btn btn-light">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Comprador</a>
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Currículo</a>
                 </button>
               </li>
               <li class="nav-item">
@@ -56,16 +56,30 @@
               </li>
               <li class="nav-item">
                 <button type="button" class="btn btn-light">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar6()">Login/Cadastre-se</a>
-                </button>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-light">
                   <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar7()">Assistencia Técnica</a>
                 </button>
               </li>
             </ul>
-           
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar6()">Login/Cadastre-se</a>
+                </button>
+              </li>
+            </ul>
+           <!-- Botões do menu -->
+           <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Início</a></li>
+              <li><a class="dropdown-item" href="#">Produtor</a></li>
+              <li><a class="dropdown-item" href="#">Currículo</a></li>
+              <li><a class="dropdown-item" href="#">Sobre Nós</a></li>
+              <li><a class="dropdown-item active" id="oBotao" href="#">Benefícios</a></li>
+              <li><a class="dropdown-item" href="#">Assistência Técnica</a></li>
+              <li><a class="dropdown-item" href="#">Login / Cadastro</a></li>
+            </ul>
+          </div>
           </div>
         </div>
       </nav>

@@ -9,7 +9,7 @@ function aoClicar2(){
 }
 
 function aoClicar3(){
-    window.location = "pagComprador.html"
+    window.location = "pagCadastro.html"
     return
 }
 

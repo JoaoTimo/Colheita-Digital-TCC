@@ -9,7 +9,7 @@ function aoClicar2(){
 }
 
 function aoClicar3(){
-    window.location = "pagComprador.html"
+    window.location = "pagCadastro.html"
     return
 }
 
@@ -30,4 +30,12 @@ function aoClicar6(){
 function aoClicar7(){
     window.location = "assistTec.html"
     return
+}
+
+function aoClicarX(){
+    window.location = "assistTec.html"
+}
+
+function aoClicarZ(){
+    window.location = "beneficiosHTML.html"
 }

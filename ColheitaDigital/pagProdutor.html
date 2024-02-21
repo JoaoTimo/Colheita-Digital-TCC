@@ -7,38 +7,21 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>TCC FODA</title>
+    <title>ColheitaDigtial/Produtor</title>
     
       <!-- Bootstrap core CSS -->
 <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
-
-
-
-
-        <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#7952b3">
-
     
     <!-- Custom styles for this template -->
-    <link href="tcc_css.css" rel="stylesheet">
-    <link rel="produtorCSS.css" href="">
+    <link rel="stylesheet" href="produtorCSS.css">
+    <script src="produtorJS.js"></script>
   </head>
   <body>    
 
     <header>
       <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
-        <div class="container-fluid">
+        <div class="container-fluid" style="margin-right: 20%;">
           <div class="col-md-5">
             <a class="navbar-brand" href="#"><img src="imagens/logoPrj.JPG" alt="" style="height: 120px; width: 130px;" onclick="aoClicar1()"></a>
           </div>
@@ -48,19 +31,56 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#" onclick="aoClicar1()">Início</a>
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" aria-current="page" href="#" onclick="aoClicar1()">Início</a>
+                </button>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="aoClicar2()">Produtor</a>
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" onclick="aoClicar2()">Produtor</a>
+                </button>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Comprador</a>
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Currículo</a>
+                </button>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar4()">Sobre nós</a>
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar4()">Sobre nós</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar5()">Benefícios</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar7()">Assistencia Técnica</a>
+                </button>
               </li>
             </ul>
-           
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <button type="button" class="btn btn-light">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar6()">Login/Cadastre-se</a>
+                  </button>
+                </li>
+              </ul>
+           <!-- Botões do menu -->
+           <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Início</a></li>
+              <li><a class="dropdown-item active" id="oBotao" href="#">Produtor</a></li>
+              <li><a class="dropdown-item" href="#">Currículo</a></li>
+              <li><a class="dropdown-item" href="#">Sobre Nós</a></li>
+              <li><a class="dropdown-item" href="#">Benefícios</a></li>
+              <li><a class="dropdown-item" href="#">Assistência Técnica</a></li>
+              <li><a class="dropdown-item" href="#">Login / Cadastro</a></li>
+            </ul>
+          </div>
           </div>
         </div>
       </nav>
@@ -239,7 +259,3 @@
 </main>
 
 </html>
-
-
-
-

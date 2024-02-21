@@ -20,14 +20,17 @@
   <body>    
 
     <header>
+      <!--Barra de Navegação-->
       <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white flex">
-        <div class="container-fluid p-2 bd-highlight d-flex">
+        <!--Distânciamento/ Alinhamento-->
+        <div class="container-fluid p-2 bd-highlight d-flex" style="margin-right: 20%;">
           <div class="col-md-5">
             <a class="navbar-brand" href="#"><img src="imagens/logoPrj.JPG" alt="" style="height: 120px; width: 130px;" onclick="aoClicar1()"></a>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!--Botões-->
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
@@ -42,7 +45,7 @@
               </li>
               <li class="nav-item">
                 <button type="button" class="btn btn-light">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Comprador</a>
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Currículo</a>
                 </button>
               </li>
               <li class="nav-item">
@@ -57,16 +60,30 @@
               </li>
               <li class="nav-item">
                 <button type="button" class="btn btn-light">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar6()">Login/Cadastre-se</a>
-                </button>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-light">
                   <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar7()">Assistencia Técnica</a>
                 </button>
               </li>
             </ul>
-            
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar6()">Login/Cadastre-se</a>
+                </button>
+              </li>
+            </ul>
+            <!-- Botões do menu -->
+            <div class="dropdown">
+              <button class="oBotao" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" id="oBotao" href="#">Início</a></li>
+                <li><a class="dropdown-item" href="#">Produtor</a></li>
+                <li><a class="dropdown-item" href="#">Currículo</a></li>
+                <li><a class="dropdown-item" href="#">Sobre Nós</a></li>
+                <li><a class="dropdown-item" href="#">Benefícios</a></li>
+                <li><a class="dropdown-item" href="#">Assistência Técnica</a></li>
+                <li><a class="dropdown-item" href="#">Login / Cadastro</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -141,7 +158,7 @@
             
             <h2>Assistência técnica</h2>
             <p>Sempre temos uma equipe disponível para ajuda aos clientes.</p>
-            <p><a class="btn btn-secondary" href="#">Ver detalhes &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="#" onclick="aoClicarX()">Ver detalhes &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img src="imagens/imgComofunciona.jpg" alt="" class="rounded-circle" style="width: 150px;" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -154,13 +171,13 @@
 
             <h2>Benefícios</h2>
             <p>Veja como ajudamos nas negociações entre nossos clientes.</p>
-            <p><a class="btn btn-secondary" href="#">Ver detalhes &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="#" onclick="aoClicarZ()">Ver detalhes &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
     
     
         <!-- START THE FEATURETTES -->
-    
+     
         <hr class="featurette-divider">
     
         <div class="row featurette">
