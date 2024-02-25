@@ -82,3 +82,12 @@
     .margemProdutores {
       margin-left: 500px;
     }
+    
+   .fonteFamilia{
+    font-family: "Roboto", sans-serif;
+    color: lightblue;
+   } 
+
+   .corNome{
+    color: white;
+   }
