@@ -82,3 +82,11 @@
     .margemProdutores {
       margin-left: 500px;
     }
+
+  /*Maps*/
+  .mapBox{
+    position: relative;
+    width: 500;
+    height: 500px;
+    background: #fff;
+  }
